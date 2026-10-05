@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPML FinApp Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="app-frame">
+        <header class="topbar">
+          <div class="brand-wrap">
+            <img class="brand-logo" src="assets/logo-badge.svg" alt="KPML logo" />
+            <div class="brand-copy">
+              <span class="brand-name">KPML FinApp</span>
+            </div>
+          </div>
+
+          <div class="topbar-actions">
+            <button class="icon-btn" aria-label="Notifications">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3a5 5 0 0 0-5 5v3.3l-1.7 4.7h13.4L17 11.3V8a5 5 0 0 0-5-5Zm0 18a2.5 2.5 0 0 1-2.45-2h4.9A2.5 2.5 0 0 1 12 21Z"/>
+              </svg>
+            </button>
+
+            <div class="profile-pill">
+              <div class="avatar">SK</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="welcome-block">
+          <h1>Good Morning, Sarah</h1>
+          <p>Welcome back to your KPML account.</p>
+        </section>
+
+        <div class="offline-banner" role="status">
+          <div class="offline-copy">
+            <strong>You’re offline</strong>
+            <span>Some information may not be up to date.</span>
+          </div>
+          <button>Retry</button>
+        </div>
+
+        <section class="summary-card">
+          <div class="summary-card__header">
+            <span class="eyebrow">TOTAL LOAN BALANCE</span>
+            <span class="gold-badge">Premium</span>
+          </div>
+
+          <div class="summary-balance">K 8,450.00</div>
+          <div class="summary-subtext">
+            <span>Next Payment</span>
+            <strong>K 458.33</strong>
+          </div>
+          <div class="summary-date">Due 30 September 2026</div>
+
+          <button class="primary-btn">VIEW LOAN</button>
+        </section>
+
+        <section class="actions-section">
+          <div class="section-heading-row">
+            <h2>Quick Actions</h2>
+          </div>
+
+          <div class="quick-actions-grid">
+            <button class="action-card accent">
+              <span class="action-icon document-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 3.5h7l5 5V18a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2Zm7 1.8v4.2h4.2"/></svg>
+              </span>
+              <span>Apply for Loan</span>
+            </button>
+
+            <button class="action-card">
+              <span class="action-icon payment-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 7.5h16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Zm0 3.5h16M7 4v3m10-3v3"/></svg>
+              </span>
+              <span>Make Payment</span>
+            </button>
+
+            <button class="action-card">
+              <span class="action-icon receipt-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2V6a2 2 0 0 1 2-2Zm0 6h10M7 10h10"/></svg>
+              </span>
+              <span>Transactions</span>
+            </button>
+
+            <button class="action-card">
+              <span class="action-icon doc-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 3.5h7l5 5V18a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2Zm7 1.8v4.2h4.2"/></svg>
+              </span>
+              <span>Statement</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="finance-overview">
+          <div class="section-heading-row">
+            <h2>My Finances</h2>
+          </div>
+
+          <div class="finance-grid">
+            <article class="mini-card">
+              <div class="mini-card__icon green-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 18h16M7 14V9m5 5V5m5 9v-4"/></svg>
+              </div>
+              <div>
+                <span>Loan Balance</span>
+                <strong>K 8,450.00</strong>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <div class="mini-card__icon gold-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 18h16M7 14V9m5 5V5m5 9v-4"/></svg>
+              </div>
+              <div>
+                <span>Total Paid</span>
+                <strong>K 12,350.00</strong>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <div class="mini-card__icon bronze-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3v18M5 8.5h14M5 15.5h14"/></svg>
+              </div>
+              <div>
+                <span>Next Payment</span>
+                <strong>K 458.33</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="progress-card">
+          <div class="section-heading-row split-row">
+            <h2>Loan Repayment Progress</h2>
+            <span class="progress-percent">68% Paid</span>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+            <div class="progress-secondary"></div>
+          </div>
+
+          <div class="progress-meta">
+            <span>K 12,350 paid of K 18,000</span>
+          </div>
+          <div class="progress-remaining">10 payments remaining</div>
+        </section>
+
+        <section class="upcoming-card">
+          <div class="upcoming-top">
+            <h3>Upcoming Payment</h3>
+            <span class="status-pill">UPCOMING</span>
+          </div>
+
+          <div class="upcoming-amount">K 458.33</div>
+          <div class="upcoming-date">Due: 30 September 2026</div>
+
+          <button class="primary-btn alt">MAKE PAYMENT</button>
+        </section>
+
+        <section class="transactions-section">
+          <div class="section-heading-row split-row">
+            <h2>Recent Transactions</h2>
+            <button class="text-link">View All</button>
+          </div>
+
+          <div class="transaction-list">
+            <article class="transaction-item">
+              <div class="transaction-icon negative">
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+              <div class="transaction-copy">
+                <strong>Loan Repayment</strong>
+                <span>30 Sep 2026</span>
+              </div>
+              <div class="transaction-amount negative">- K 458.33</div>
+            </article>
+
+            <article class="transaction-item">
+              <div class="transaction-icon positive">
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 19V5"/></svg>
+              </div>
+              <div class="transaction-copy">
+                <strong>Savings Deposit</strong>
+                <span>25 Sep 2026</span>
+              </div>
+              <div class="transaction-amount positive">+ K 200.00</div>
+            </article>
+
+            <article class="transaction-item">
+              <div class="transaction-icon positive">
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 19V5"/></svg>
+              </div>
+              <div class="transaction-copy">
+                <strong>Loan Disbursement</strong>
+                <span>01 Sep 2026</span>
+              </div>
+              <div class="transaction-amount positive">+ K 5,000.00</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="notification-card">
+          <div class="notification-head">
+            <span class="notification-badge">Reminder</span>
+            <strong>Payment Reminder</strong>
+          </div>
+          <p>Your next loan repayment of K458.33 is due on 30 September 2026.</p>
+        </section>
+
+        <div class="security-note">🔒 Your KPML account is protected</div>
+
+        <section class="profile-section">
+          <div class="section-heading-row">
+            <h2>My Profile</h2>
+          </div>
+
+          <ul class="profile-list">
+            <li>Personal Information</li>
+            <li>Contact Information</li>
+            <li>Account Information</li>
+            <li>Change Password</li>
+            <li>Change PIN</li>
+            <li>Biometric Login</li>
+            <li>Notification Settings</li>
+            <li>Security</li>
+            <li>Help &amp; Support</li>
+            <li>Logout</li>
+          </ul>
+        </section>
+
+        <section class="state-previews">
+          <div class="empty-state-card">
+            <div class="empty-state-icon">◎</div>
+            <h3>You don’t have an active loan</h3>
+            <p>Ready to achieve your next financial goal? Explore our available loan products.</p>
+            <button class="primary-btn">APPLY FOR A LOAN</button>
+          </div>
+
+          <div class="loading-state">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-balance"></div>
+            <div class="skeleton-row">
+              <span class="skeleton skeleton-chip"></span>
+              <span class="skeleton skeleton-chip"></span>
+              <span class="skeleton skeleton-chip"></span>
+            </div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card small"></div>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <button class="nav-item active" aria-label="Home">
+            <svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4v-7H9v7H5a1 1 0 0 1-1-1v-8.5Z"/></svg>
+            <span>Home</span>
+          </button>
+          <button class="nav-item" aria-label="Loans">
+            <svg viewBox="0 0 24 24"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Zm3 0h10M8 12h8"/></svg>
+            <span>Loans</span>
+          </button>
+          <button class="nav-item" aria-label="Payments">
+            <svg viewBox="0 0 24 24"><path d="M4 7.5h16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Zm0 3.5h16M7 4v3m10-3v3"/></svg>
+            <span>Payments</span>
+          </button>
+          <button class="nav-item" aria-label="Transactions">
+            <svg viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2V6a2 2 0 0 1 2-2Zm0 6h10M7 10h10"/></svg>
+            <span>Transactions</span>
+          </button>
+          <button class="nav-item" aria-label="Profile">
+            <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 8a7 7 0 0 1 14 0"/></svg>
+            <span>Profile</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
